@@ -43,7 +43,7 @@ function boxplot(data) {
   data.forEach(d => {
     if (minVariable) d[minVariable] = Number(d[minVariable])
     if (maxVariable) d[maxVariable] = Number(d[maxVariable])
-    if (medianVariable) d[medianVariable] = Number(d[maxVariable])
+    if (medianVariable) d[medianVariable] = Number(d[medianVariable])
     if (q1Variable) d[q1Variable] = Number(d[q1Variable])
     if (q3Variable) d[q3Variable] = Number(d[q3Variable])
   })
@@ -74,6 +74,7 @@ function boxplot(data) {
     .axisBottom()
     .scale(xScale)
     .ticks(7)
+    .tickFormat(d3.format('~s'))
     .tickSize(-xTranslate)
 
   d3.select('svg')
@@ -112,6 +113,14 @@ function boxplot(data) {
       return `translate(${xScale(d[medianVariable])},${yValueScaled + yOffset})`
     })
     .each(function(d, i) {
+      const minScreen = xScale(d[minVariable])
+      const medianScreen = xScale(d[medianVariable])
+      const maxScreen = xScale(d[maxVariable])
+      console.log('d', d)
+      console.log('minScreen', minScreen)
+      console.log('medianScreen', medianScreen)
+      console.log('maxScreen', maxScreen)
+
       d3.select(this)
         .append('line')
         .attr('class', 'range')
