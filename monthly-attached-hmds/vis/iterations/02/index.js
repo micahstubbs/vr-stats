@@ -52,28 +52,34 @@ function boxplot(data) {
 
   console.log(data)
 
+  //
   // setup the axes
+  //
+
+  // x-axis
+  const xTranslate = h - margin.top
   xAxis = d3
     .axisBottom()
     .scale(xScale)
-    .ticks(10)
-    .tickSize(-470)
+    .tickSize(-xTranslate)
 
   d3.select('svg')
     .append('g')
-    .attr('transform', 'translate(0,480)')
+    .attr('transform', `translate(0,${xTranslate})`)
     .attr('id', 'xAxisG')
     .call(xAxis)
 
+  // y-axis
+  const yTranslate = w - margin.right
   yAxis = d3
     .axisRight()
     .scale(yScale)
-    .tickSize(-470)
+    .tickSize(-yTranslate)
     .tickValues(catValues)
 
   d3.select('svg')
     .append('g')
-    .attr('transform', 'translate(470,0)')
+    .attr('transform', `translate(${yTranslate},0)`)
     .attr('id', 'yAxisG')
     .call(yAxis)
 
