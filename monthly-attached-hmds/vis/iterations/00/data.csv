@@ -1,0 +1,8 @@
+company,product,launchMonth,launchYear,unitsShipped,unitsPrefix,unitsSuffix
+Google,Cardboard,June,2015,10000000,,+
+Samsung,GearVR,December,2015,2300000,,
+Microsoft,Hololens,March,2016,10000,~,
+Oculus,Rift CV1,April,2016,350000,~,
+HTC,Vive,May,2016,500000,~,
+Sony,Playstation VR,October,2016,2600000,,
+Google,Daydream VR,November,2016,500000,,

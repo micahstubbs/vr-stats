@@ -1,0 +1,86 @@
+[  
+  {  
+    "imageFileName":"google-cardboard.png",
+    "imageWidth": 503,
+    "imageHeight": 403,
+    "imageXOffset": 2,
+    "imageYOffset": -10,
+    "textOffsetLine0": "",
+    "textOffsetLine1": "       ",
+    "textOffsetLine2": "   ",
+    "textXOffset": 58,
+    "textYOffset": 46
+  },
+  {  
+    "imageFileName":"samsung-gear-vr.png",
+    "imageWidth": 561,
+    "imageHeight": 424,
+    "imageXOffset": 14,
+    "imageYOffset": -15,
+    "textOffsetLine0": "",
+    "textOffsetLine1": " ",
+    "textOffsetLine2": "   ",
+    "textXOffset": 310,
+    "textYOffset": 289
+  },
+  {  
+    "imageFileName":"microsoft-hololens.png",
+    "imageWidth": 445,
+    "imageHeight": 213,
+    "imageXOffset": 2,
+    "imageYOffset": -6,
+    "textOffsetLine0": "",
+    "textOffsetLine1": "",
+    "textOffsetLine2": "",
+    "textXOffset": 360,
+    "textYOffset": 435
+  },
+  {  
+    "imageFileName":"oculus-rift-cv1.png",
+    "imageWidth": 466,
+    "imageHeight": 367,
+    "imageXOffset": 6,
+    "imageYOffset": -15,
+    "textOffsetLine0": "",
+    "textOffsetLine1": "         ",
+    "textOffsetLine2": "",
+    "textXOffset": 416,
+    "textYOffset": 378
+  },
+  {  
+    "imageFileName":"htc-vive.png",
+    "imageWidth": 453,
+    "imageHeight": 350,
+    "imageXOffset": 8,
+    "imageYOffset": -45,
+    "textOffsetLine0": "",
+    "textOffsetLine1": "",
+    "textOffsetLine2": "",
+    "textXOffset": 578,
+    "textYOffset": 375
+  },
+  {  
+    "imageFileName":"sony-playstation-vr.png",
+    "imageWidth": 634,
+    "imageHeight": 548,
+    "imageXOffset": 10,
+    "imageYOffset": -5,
+    "textOffsetLine0": "",
+    "textOffsetLine1": "      ",
+    "textOffsetLine2": "      ",
+    "textXOffset": 695,
+    "textYOffset": 286
+  },
+  {  
+    "imageFileName":"google-daydream-vr.png",
+    "imageWidth": 588,
+    "imageHeight": 514,
+    "imageXOffset": 20,
+    "imageYOffset": 0,
+    "textOffsetLine0": "",
+    "textOffsetLine1": "",
+    "textOffsetLine2": "",
+    "textXOffset": 841,
+    "textYOffset": 402
+  }
+]
