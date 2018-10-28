@@ -5,15 +5,18 @@ function boxplot(data) {
   const h = 500
   const w = 500
 
-  const outerHeight = 500
-  const outerWidth = 960
-
   const margin = {
     top: 20,
     bottom: 20,
     left: 20,
     right: 30
   }
+
+  const innerHeight = h - margin.bottom
+  const innerWidth = w - margin.right
+
+  const outerHeight = 500
+  const outerWidth = 960
 
   d3.select('body')
     .append('svg')
@@ -52,12 +55,12 @@ function boxplot(data) {
       d3.min(data.map(d => d[minVariable])),
       d3.max(data.map(d => d[maxVariable]))
     ])
-    .rangeRound([margin.left, w - margin.right])
+    .rangeRound([margin.left, innerWidth])
 
   yScale = d3
     .scaleBand()
     .domain(catValues.reverse())
-    .rangeRound([h - margin.bottom, margin.top])
+    .rangeRound([innerHeight, margin.top])
 
   console.log(data)
 
@@ -66,7 +69,7 @@ function boxplot(data) {
   //
 
   // x-axis
-  const xTranslate = h - margin.top
+  const xTranslate = innerHeight
   xAxis = d3
     .axisBottom()
     .scale(xScale)
@@ -80,7 +83,7 @@ function boxplot(data) {
     .call(xAxis)
 
   // y-axis
-  const yTranslate = w - margin.right
+  const yTranslate = innerWidth
   yAxis = d3
     .axisRight()
     .scale(yScale)
