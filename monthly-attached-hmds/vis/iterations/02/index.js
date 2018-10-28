@@ -53,14 +53,14 @@ function boxplot(data) {
     .scaleLinear()
     .domain([
       d3.min(data.map(d => d[minVariable])),
-      d3.max(data.map(d => d[maxVariable]))
+      d3.max(data.map(d => d[maxVariable])) * 1.1
     ])
     .rangeRound([margin.left, innerWidth])
 
   yScale = d3
     .scaleBand()
-    .domain(catValues.reverse())
-    .rangeRound([innerHeight, margin.top])
+    .domain(catValues)
+    .rangeRound([0, innerHeight])
 
   console.log(data)
 
@@ -105,10 +105,11 @@ function boxplot(data) {
     .attr('transform', d => {
       const yValue = d[catVariable]
       const yValueScaled = yScale(yValue)
+      const yOffset = margin.top + margin.bottom
       // console.log('d', d)
       console.log('yValue', yValue)
       console.log('yValueScaled', yValueScaled)
-      return `translate(${xScale(d[medianVariable])},${yValueScaled})`
+      return `translate(${xScale(d[medianVariable])},${yValueScaled + yOffset})`
     })
     .each(function(d, i) {
       d3.select(this)
