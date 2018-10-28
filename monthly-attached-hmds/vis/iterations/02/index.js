@@ -36,6 +36,15 @@ function boxplot(data) {
   const q1Variable = undefined
   const q3Variable = undefined
 
+  // ensure numeric values read from csv data are numbers
+  data.forEach(d => {
+    if (minVariable) d[minVariable] = Number(d[minVariable])
+    if (maxVariable) d[maxVariable] = Number(d[maxVariable])
+    if (medianVariable) d[medianVariable] = Number(d[maxVariable])
+    if (q1Variable) d[q1Variable] = Number(d[q1Variable])
+    if (q3Variable) d[q3Variable] = Number(d[q3Variable])
+  })
+
   // define the scales
   xScale = d3
     .scaleLinear()
@@ -43,12 +52,12 @@ function boxplot(data) {
       d3.min(data.map(d => d[minVariable])),
       d3.max(data.map(d => d[maxVariable]))
     ])
-    .range([margin.left, w - margin.right])
+    .rangeRound([margin.left, w - margin.right])
 
   yScale = d3
     .scaleBand()
     .domain(catValues.reverse())
-    .range([h - margin.bottom, margin.top])
+    .rangeRound([h - margin.bottom, margin.top])
 
   console.log(data)
 
@@ -61,6 +70,7 @@ function boxplot(data) {
   xAxis = d3
     .axisBottom()
     .scale(xScale)
+    .ticks(7)
     .tickSize(-xTranslate)
 
   d3.select('svg')
