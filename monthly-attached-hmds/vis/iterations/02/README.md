@@ -1,4 +1,8 @@
-# monthly-attached-hmds
+or, an ordinal boxplot with no q1 or q3 data. A boxplot without the box.
+
+---
+
+A visualization of monthly-attached-hmds
 
 [Road to VR](https://twitter.com/RtoVR) ran the figures against the most recent [Hardware & Software Survey (September 2018)](https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam), and found the following counts for headsets (head-mounted displays, hmds) connected to users’ computers over the course of the month.
 
