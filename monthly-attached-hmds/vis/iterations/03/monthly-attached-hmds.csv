@@ -1,0 +1,7 @@
+Steam Monthly Active Users,min % ,% that have,max %,VR HMD,min user count estimate,median user count estimate,max user count estimate,YYYYMM,reporter,source
+90000000,0.335,0.34,0.3449,Oculus Rift,301500,306000,310410,201809,@micahstubbs,https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam?platform=combined
+90000000,0.305,0.31,0.3149,HTC Vive,274500,279000,283410,201809,@micahstubbs,https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam?platform=combined
+90000000,0.045,0.05,0.0549,Windows Mixed Reality,40500,45000,49410,201809,@micahstubbs,https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam?platform=combined
+90000000,0.005,0.01,0.0149,HTC Vive Pro,4500,9000,13410,201809,@micahstubbs,https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam?platform=combined
+90000000,0.005,0.01,0.0149,Oculus Rift DK2,4500,9000,13410,201809,@micahstubbs,https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam?platform=combined
+90000000,0,0,0.0049,Oculus Rift DK1,0,0,4410,201809,@micahstubbs,https://store.steampowered.com/hwsurvey/Steam-Hardware-Software-Survey-Welcome-to-Steam?platform=combined
