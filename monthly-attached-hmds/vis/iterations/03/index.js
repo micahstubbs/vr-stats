@@ -83,6 +83,13 @@ function boxplot(data) {
     .attr('id', 'xAxisG')
     .call(xAxis)
 
+  // text label for the x axis
+  d3.select('svg')
+    .append('text')
+    .attr('transform', `translate(${w / 2},${h - 5})`)
+    .style('text-anchor', 'middle')
+    .text('Steam Monthly Attached Head-Mounted Displays')
+
   // y-axis
   const yTranslate = innerWidth
   yAxis = d3
