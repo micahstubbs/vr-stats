@@ -129,7 +129,7 @@ function boxplot(data) {
         .attr('y1', 0)
         .attr('y2', 0)
         .style('stroke', 'black')
-        .style('stroke-width', '4px')
+        .style('stroke-width', '3px')
 
       d3.select(this)
         .append('line')
@@ -139,7 +139,7 @@ function boxplot(data) {
         .attr('y1', -10)
         .attr('y2', 10)
         .style('stroke', 'black')
-        .style('stroke-width', '4px')
+        .style('stroke-width', '3px')
 
       d3.select(this)
         .append('line')
@@ -149,7 +149,7 @@ function boxplot(data) {
         .attr('y1', -10)
         .attr('y2', 10)
         .style('stroke', 'black')
-        .style('stroke-width', '4px')
+        .style('stroke-width', '3px')
 
       // only draw the box if q1 and q3 variables are defined
       if (q1Variable && q3Variable) {
@@ -162,16 +162,17 @@ function boxplot(data) {
           .attr('width', xScale(d[q3Variable]) - xScale(d[q1Variable]))
           .style('fill', 'white')
           .style('stroke', 'black')
-          .style('stroke-width', '2px')
+          .style('stroke-width', '3px')
       }
 
+      // median
       d3.select(this)
         .append('line')
         .attr('x1', 0)
         .attr('x2', 0)
-        .attr('y1', -10)
-        .attr('y2', 10)
+        .attr('y1', -5)
+        .attr('y2', 5)
         .style('stroke', 'darkgray')
-        .style('stroke-width', '4px')
+        .style('stroke-width', '3px')
     })
 }
