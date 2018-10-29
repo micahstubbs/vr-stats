@@ -11,3 +11,5 @@ A visualization of monthly-attached-hmds
 https://www.roadtovr.com/new-valve-data-suggests-648000-active-vr-headsets-on-steam/amp/
 
 https://twitter.com/micahstubbs/status/1056591387129405445
+
+an iteration on the [horizontal boxplot](https://bl.ocks.org/micahstubbs/98d8b4eba987224e3c84) example from [@micahstubbs](https://twitter.com/micahstubbs)
